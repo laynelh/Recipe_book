@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Recipe Book</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-storage-compat.js"></script>
+  <!-- Firebase Config -->
+  <script src="js/firebase-config.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>My Recipe Book</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="add-recipe.html">Add Recipe</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search recipes...">
+      <button id="search-button">Search</button>
+    </div>
+
+    <div class="recipes-grid" id="recipes-grid">
+      <!-- Recipe cards will be injected here by main.js -->
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Recipe</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-storage-compat.js"></script>
+  <!-- Firebase Config -->
+  <script src="js/firebase-config.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Add New Recipe</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="add-recipe.html">Add Recipe</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <form id="add-recipe-form">
+      <div class="form-group">
+        <label for="recipe-name">Recipe Name</label>
+        <input type="text" id="recipe-name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="recipe-description">Description</label>
+        <textarea id="recipe-description" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="recipe-ingredients">Ingredients (separate by commas)</label>
+        <textarea id="recipe-ingredients" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="recipe-instructions">Instructions</label>
+        <textarea id="recipe-instructions" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="recipe-image">Recipe Image</label>
+        <input type="file" id="recipe-image" accept="image/*" required>
+      </div>
+
+      <button type="submit">Add Recipe</button>
+    </form>
+  </div>
+
+  <script src="js/add-recipe.js"></script>
+</body>
+</html>
